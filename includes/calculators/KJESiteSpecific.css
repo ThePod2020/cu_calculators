@@ -1,0 +1,135 @@
+body {
+    --color1: #77ba49;
+    --color2: #535456;
+    --color3: #497425;
+    --color4: #333;
+    --slider: 119, 186, 73; /*this is a rgb value*/
+    }
+
+#KJEAllContent {
+    background: #ffffff;
+    color: #000000;
+}
+
+.KJEFontHeading {
+    color:#000000;
+}
+
+.KJEError {
+    color:#BB0000;
+}
+
+.KJETitle {
+}
+
+.KJECalculatorTable {
+}
+
+.KJEReportTitle {
+}
+
+.KJEReportTitleBlock {
+}
+
+.KJEWidthConstraint {
+    max-width: 900px;
+    text-align:left;
+    margin: auto;
+    background: #ffffff;
+    padding:15px;
+}
+
+.KJEWrapper {
+    background: #ffffff;
+    padding: 0;
+    margin:0;
+}
+
+body {
+ margin: 0;
+}
+
+.KJEDefinitionsHeader {
+    margin-top: 40px;
+}
+
+.KJEDefinitions {
+    display: none !important;
+}
+
+/**CUSTOMCSS**/
+
+button.KJECloseButton {
+    color:#fff;
+    background: var(--color1);
+    width: 20px;
+    }
+    
+    button.KJEDefinitionIcon {
+    color:#fff;
+    background: var(--color1);
+    }
+    
+        .KJEInputContainer input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height:14px;
+            width:14px;
+            margin-top: -10px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            box-sizing: border-box;
+        border-bottom: 12px solid rgba(var(--slider), 0.6);
+        -moz-box-shadow: 0 2px rgba(var(--slider), 0.3);
+        box-shadow: 0 2px rgba(var(--slider), 0.3);
+        cursor: pointer;
+        } 
+        .KJEInputContainer input[type=range]::-ms-thumb {
+            -webkit-appearance: none;
+        height:14px;
+        width:14px;
+        margin-top: -10px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        box-sizing: border-box;
+    border-bottom: 12px solid rgba(var(--slider), 0.6);
+    -moz-box-shadow: 0 2px rgba(var(--slider), 0.3);
+    box-shadow: 0 2px rgba(var(--slider), 0.3);
+    cursor: pointer;
+        } 
+        .KJEInputContainer input[type=range]::-moz-range-thumb {
+        -webkit-appearance: none;
+        height:14px;
+        width:14px;
+        margin-top: -10px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        box-sizing: border-box;
+    border-bottom: 12px solid rgba(var(--slider), 0.6);
+    -moz-box-shadow: 0 2px rgba(var(--slider), 0.3);
+    box-shadow: 0 2px rgba(var(--slider), 0.3);
+    cursor: pointer;
+    }
+    .KJEInputContainer input[type=range]:active::-webkit-slider-thumb {
+        border-bottom: 12px solid rgba(var(--slider), 1);
+        -moz-box-shadow: 0 2px rgba(var(--slider), 0.6);
+        box-shadow: 0 2px rgba(var(--slider), 0.3);
+    } 
+    .KJEInputContainer input[type=range]:active::-ms-thumb {
+        border-bottom: 12px solid rgba(var(--slider), 1);
+        -moz-box-shadow: 0 2px rgba(var(--slider), 0.6);
+        box-shadow: 0 2px rgba(var(--slider), 0.3);
+    }
+    .KJEInputContainer input[type=range]:active::-moz-range-thumb {
+    border-bottom: 12px solid rgba(var(--slider), 1);
+    -moz-box-shadow: 0 2px rgba(var(--slider), 0.6);
+    box-shadow: 0 2px rgba(var(--slider), 0.3);
+    
+    }
+    .KJEGraphDropper:hover {
+            background-color: #fffcf5;
+        }
+    
+     .KJECommandButton {
+            background: var(--color3);
+            border: 3px solid var(--color1); 
+        }
