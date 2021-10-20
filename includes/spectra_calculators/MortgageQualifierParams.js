@@ -1,10 +1,9 @@
 
 
 
-  KJE.parameters.set("CALCULATE_BY",2);
   KJE.parameters.set("TOTAL_MONTHLY_PAYMENT",500);
   KJE.parameters.set("PURCHASE_PRICE",10000);
-  KJE.parameters.set("ANNUAL_INCOME",80000);
+  KJE.parameters.set("ANNUAL_INCOME",100000);
   KJE.parameters.set("CREDIT_CARD_PAYMENTS",0);
   KJE.parameters.set("DOWNPAYMENT_CLOSING_CASH",10000);
   KJE.parameters.set("HOME_INSURANCE_RATE",0.5);

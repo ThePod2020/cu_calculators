@@ -424,7 +424,7 @@ button.KJEMenu:hover {
 }
 
 .KJEGuiDefnPopup:focus {
-    outline: 2px solid #0080FF;
+    outline: 2px solid #37BEB7;
 }
 
 .KJEDefinitionPopup, .KJEDefinitionPopup dl, .KJEDefinitionPopup dd, .KJEDefinitionPopup dt, .KJEDefinitionPopup h3, .KJEDefinitionPopup th, .KJEDefinitionPopup td, .KJEDefinitionPopup ul, .KJEDefinitionPopup li, .KJEDefinitionPopup ol {
@@ -446,7 +446,7 @@ button.KJEDefinitionIcon:focus,
 button.KJECloseButton:focus
 {
     outline-offset: 0px;
-    outline: 2px dashed #444444/*KJECommandButton*/;
+    outline: 2px dashed #37BEB7;
 
 }
 
@@ -600,7 +600,7 @@ div.KJEInputContainer div.KJEIncrementer
 
 div.KJESlider div.KJEScale {
     border:none;
-    left-margin: 10px;
+    margin-left: 10px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -721,7 +721,7 @@ div.KJEDropBoxDivModern {
 }
 
 .KJEInputContainer input.KJEInputModern:focus, .KJEInputContainer select.KJEDropBox:focus {
-    outline: 2px dashed #444444/*KJECommandButton*/;
+    outline: 2px dashed #37BEB7;
     outline-offset: -3px;
 }
 
@@ -744,7 +744,7 @@ div.KJEDropBoxDivModern {
     outline-offset: 0px;
     box-shadow: none;
     outline: none;
-    border: 2px solid #0000D4;
+    border: 2px solid #1D7883;
 }
 
 .KJEInputContainer input.KJEInputModern[type='radio']  {
@@ -970,7 +970,6 @@ div.KJEGuiDefnPopup {
     -moz-box-shadow: 3px 3px 3px #333;
     -webkit-animation: fadeIn .4s;
     animation: fadeIn .4s;
-    ddd
 }
 
 div.KJEGuiDefnPopup dt {
@@ -1566,7 +1565,7 @@ table.KJEScheduleTable td.KJEScheduleCellStrong {
 
 table.KJEScheduleTable td.KJECellBorder, table.KJEScheduleTable th.KJECellBorder {
     border-width: 0;
-    border-sytle: solid;
+    border-style: solid;
     border-width: 0 1px 0 0;
 }
 
@@ -2264,7 +2263,7 @@ img.KJEMiddle {
 /**Color Settings**/
 /* Color Settings */
 #KJEAllContent,.KJECalculator p, .KJEFontHeading {
-    color: #222;
+    color: #101820;
 }
 
 body.KJEBody #KJEAllContent,.KJEWidthConstraint, .KJEWrapper {
@@ -2298,9 +2297,9 @@ div.KJEError {
 div.KJEGuiDefnPopup,
 span.KJEGuiErrorPopup,
 span.KJERequired:hover span.KJERequiredShowHover {
-    color:#222;
+    color:#101820;
     background-color:#FFFFFF;
-    border-color: #0000D4;
+    border-color: #1D7883;
 }
 
 #KJEGuiDataPoint:before,
@@ -2308,7 +2307,7 @@ span.KJERequired:hover span.KJERequiredShowHover {
 div.KJEGuiDefnPopup:before,
 span.KJEGuiErrorPopup:before,
 span.KJERequired:hover span.KJERequiredShowHover:before {
-    border-color:#0000D4 transparent;
+    border-color:#1D7883 transparent;
 }
 
 #KJEGuiDataPoint:after,
@@ -2320,8 +2319,8 @@ span.KJERequired:hover span.KJERequiredShowHover:after {
 }
 
 button.KJEDefinitionIcon, button.KJECloseButton {
-    color:#0000D4;
-    border-color:#0000D4;
+    color:#1D7883;
+    border-color:#1D7883;
     background-color: #FFFFFF/*PAGE_BACKGROUND_COLOR*/;
 }
 
@@ -2332,27 +2331,27 @@ button.KJECloseButton:active,
 button.KJECloseButton:focus,
 button.KJECloseButton:hover {
     color:#FFFFFF;
-    background-color:#0000D4;
-    outline-color: #444444/*KJECommandButton*/;
+    background-color:#1D7883;
+    outline-color: #37BEB7;
 }
 
 /* Controls */
 .KJECommandButton, .KJEMoreButton {
     color: #FFFFFF/*KJECommandButton*/;
-    background-color: #333333/*KJECommandButton*/;
-    border-color: #444444/*KJECommandButton*/;
+    background-color: #1D7883;
+    border-color: #37BEB7;
 }
 
 .KJECommandButton:focus, .KJEMoreButton:focus   {
-    background-color: #333333/*KJECommandButton*/;
+    background-color: #1D7883;
 
     outline: none;
-    box-shadow: 0 0 2pt 2pt #444444/*KJECommandButton*/;
+    box-shadow: 0 0 2pt 2pt #37BEB7;
 }
 
 .KJECommandButton:hover, .KJEMoreButton:hover, .KJECommandButton:active, .KJEMoreButton:active   {
-    background-color: #444444/*KJECommandButton*/;
-    border-color: #333333/*KJECommandButton*/;
+    background-color: #37BEB7;
+    border-color: #1D7883;
 }
 
 .KJEInputDiv,
@@ -2366,11 +2365,11 @@ div.KJEDropper:hover, div.KJEGraphDropper:hover {
 }
 
 div.KJEDropper:focus, div.KJEGraphDropper:focus {
-    outline: 2px solid #0080FF;
+    outline: 2px solid #37BEB7;
 }
 
 .KJEInputContainer .KJEHelp:hover {
-    color: #0000D4;
+    color: #1D7883;
 }
 
 div.KJEButtonIsFixed {
@@ -2379,13 +2378,13 @@ div.KJEButtonIsFixed {
 }
 
 .KJEInputContainer input.KJEInputModern[type='radio']:focus,.KJEInputContainer input.KJEInputModern[type='radio']:active {
-    box-shadow:0 0 5px 0px #0080FF inset;
-    outline: 2px dashed #444444/*KJECommandButton*/;
+    box-shadow:0 0 5px 0px #37BEB7 inset;
+    outline: 2px dashed #37BEB7;
 }
 
 .KJEInputContainer input.KJEInputModern[type='checkbox']:focus,.KJEInputContainer input.KJEInputModern[type='checkbox']:active {
-    box-shadow:0 0 5px 0px #0080FF inset;
-    outline: 2px dashed #444444/*KJECommandButton*/;
+    box-shadow:0 0 5px 0px #37BEB7 inset;
+    outline: 2px dashed #37BEB7;
 }
 
 div.KJEDropBoxDivModern {
@@ -2398,13 +2397,13 @@ div.KJEDropBoxDivModern {
 }
 
 .KJEIncrementMinus, .KJEIncrementPlus, .KJEIncrementPlus:after, .KJEIncrementMinus:after  {
-    border-color: #0000D4;
+    border-color: #1D7883;
     color: #FFFFFF;
 }
 
 .KJEIncrementMinus:hover, .KJEIncrementPlus:hover {
-    background-color: #0000D4;
-    border-color: #0000D4;
+    background-color: #1D7883;
+    border-color: #1D7883;
 }
 
 .KJEInputContainer .KJETrailingLabelDisable {
@@ -2440,7 +2439,7 @@ button.KJEMenu:hover,
 button.KJEMenu:active,
 button.KJEMenu:focus,
 button.KJEMenu:hover {
-    border-color:#0080FF;
+    border-color:#37BEB7;
     outline: lightgray solid 2px;
 }
 
@@ -2495,7 +2494,7 @@ table.KJEReportTable  thead.KJEReportTHeader tr.KJEHeaderRow,
 table.KJEScheduleTable  thead.KJEScheduleTHeader tr.KJEScheduleHeaderRow,
 table.KJEReportTable caption.KJEHeaderRow, table.KJEScheduleTable caption.KJEHeaderRow {
     background-color: #CCCCCC/*PAGE_BACKGROUND_COLORDARKERDARKER*/;
-    color: #222;
+    color: #101820;
 }
 
 table.KJEReportTable td.KJECell, table.KJEReportTable th.KJECell,
@@ -2525,7 +2524,7 @@ table.KJECalcTable td.KJECellBorderBottom {
 }
 
 table.KJEIndexTable th.KJELabel a, #KJEAllContent a {
-    color:#0000D4;
+    color:#1D7883;
 }
 
 #KJEAllContent table.KJEReportTable a:hover,
@@ -2556,7 +2555,7 @@ table.KJEScheduleTable tr.KJEScheduleEvenRow:hover, table.KJEReportTable tr.KJEE
 table.KJEScheduleTable tr.KJEScheduleOddRow:hover, table.KJEReportTable tr.KJEOddRow:hover, table.KJECalcTable tr.KJEOddRow:hover,
 table.KJEScheduleTable  thead.KJEScheduleTHeader tr.KJEScheduleHeaderRow:hover, table.KJEReportTable  thead.KJEReportTHeader tr.KJEHeaderRow:hover {
     color: #FFFFFF;
-    background-color: #0080FF;
+    background-color: #37BEB7;
 }
 table.KJEReportTable caption.KJEHeaderRow:hover,
 table.KJEScheduleTable caption.KJEHeaderRow:hover,
@@ -2574,7 +2573,7 @@ table.KJEScheduleTable td.KJEScheduleCell:hover,
 table.KJEScheduleTable td.KJEScheduleCellStrong:hover
 {
     color: #FFFFFF;
-    background-color: #0000D4;
+    background-color: #1D7883;
 }
 
 /* Sliders */
@@ -2585,19 +2584,19 @@ table.KJEScheduleTable td.KJEScheduleCellStrong:hover
 /* Special styling for WebKit/Blink */
 .KJEInputContainer input[type=range]::-webkit-slider-thumb, .KJEInputContainer input[type=range]:active::-webkit-slider-thumb {
     -webkit-appearance: none;
-    border: 1px solid #0000D4;
+    border: 1px solid #1D7883;
     width: 14px;
     height: 14px;
     border-radius: 14px;
-    background: #0000D4;
+    background: #1D7883;
     cursor: pointer;
     box-shadow: none;
     margin-top: -5px; /* You need to specify a margin in Chrome */
 }
 
 .KJEInputContainer input[type=range]:active::-webkit-slider-thumb {
-    border: 1px solid #0080FF;
-    background: #0080FF;
+    border: 1px solid #37BEB7;
+    background: #37BEB7;
     box-shadow: none;
 }
 
@@ -2616,7 +2615,7 @@ table.KJEScheduleTable td.KJEScheduleCellStrong:hover
     margin-top: -6px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
     background-image: linear-gradient(
             90deg,
-            #0080FF var(--webkitProgressPercent),
+            #37BEB7 var(--webkitProgressPercent),
             #BBBBBB var(--webkitProgressPercent)
     );
 }
@@ -2627,19 +2626,19 @@ table.KJEScheduleTable td.KJEScheduleCellStrong:hover
 
 .KJEInputContainer input[type=range]::-moz-range-thumb, .KJEInputContainer input[type=range]:active::-moz-range-thumb {
     -webkit-appearance: none;
-    border: 1px solid #0000D4;
+    border: 1px solid #1D7883;
     width: 12px;
     height: 12px;
     border-radius: 12px;
-    background: #0000D4;
+    background: #1D7883;
     cursor: pointer;
     box-shadow: none;
     -mox-box-shadow: none;
 }
 
 .KJEInputContainer input[type=range]:active::-moz-range-thumb {
-    border: 1px solid #0080FF;
-    background: #0080FF;
+    border: 1px solid #37BEB7;
+    background: #37BEB7;
 }
 
 .KJEInputContainer input[type=range]::-moz-range-track, input[type="range"]::-moz-range-progress, .KJEInputContainer input[type=range]:active::-moz-range-track  {
@@ -2656,7 +2655,7 @@ table.KJEScheduleTable td.KJEScheduleCellStrong:hover
 }
 
 input[type="range"]::-moz-range-progress {
-    background-color: #0080FF;
+    background-color: #37BEB7;
 }
 
 /* All the same stuff for IE */
@@ -2665,16 +2664,16 @@ input[type="range"]::-moz-range-progress {
     margin-top: 0;
     box-shadow: none;
     cursor: pointer;
-    border: 1px solid #0000D4;
+    border: 1px solid #1D7883;
     width: 12px;
     height: 12px;
     border-radius: 12px;
-    background: #0000D4;
+    background: #1D7883;
 }
 
 .KJEInputContainer input[type=range]:active::-ms-thumb {
-    border: 1px solid #0080FF;
-    background: #0080FF;
+    border: 1px solid #37BEB7;
+    background: #37BEB7;
 }
 
 .KJEInputContainer input[type=range]::-ms-track {
@@ -2688,7 +2687,7 @@ input[type="range"]::-moz-range-progress {
 }
 
 .KJEInputContainer input[type=range]::-ms-fill-lower, .KJEInputContainer input[type=range]:active::-ms-fill-lower, .KJEInputContainer input[type=range]::-ms-fill-upper, .KJEInputContainer input[type=range]:active::-ms-fill-upper  {
-    background: #0080FF;
+    background: #37BEB7;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -2737,3 +2736,11 @@ input[type="range"]::-moz-range-progress {
 }
 
 /*Proofing CSS*/
+h1.KJEFontTitle, #KJETitle, #KJEAllContent h1, #KJEAllContent h2.KJEDefinitionsHeader, #KJEAllContent h2.KJEReportHeader, #KJEAllContent h2.KJEScheduleHeader,
+#KJEAllContent h2.KJEToggleTitle ,  #KJEAllContent h2.KJEGraphTitle, div.KJESideBar h4  {
+    color: #101820;
+}
+
+#KJEAllContent div.KJESubTitle {
+    color: #000000;
+}
