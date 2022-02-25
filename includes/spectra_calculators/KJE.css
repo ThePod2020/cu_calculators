@@ -14,6 +14,12 @@ body {
 
 body.KJEBody {
     margin: 0;
+    color: #101820;
+    background-color: #FFFFFF;/*PAGE_BACKGROUND_COLOR*/;
+}
+
+body.KJEBody a, body.KJEBody a:hover, body.KJEBody a:visited, body.KJEBody a:active {
+    color: #1D7883;
 }
 
 #KJEAllContent {
@@ -121,7 +127,7 @@ div.KJEDropper, div.KJEGraphDropper
 }
 */
 #KJECalculatorScreenSize, #KJEFixed, #KJECommandButtons, #KJEReportButtons, #KJEMoreButtons {
-    max-width: 900px;
+    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -151,7 +157,7 @@ div.KJEDropper, div.KJEGraphDropper
 }
 
 #KJEFixed {
-    width: 100%;
+    width: 98%;
     z-index:999;
 }
 
@@ -492,7 +498,6 @@ button.KJECloseButton {
     padding: 0;
     border-radius: 2px;
     border-width: 1px;
-    cursor:hand;
     font-size: 0.9rem;/*font_small*/
 
 }
@@ -1485,6 +1490,62 @@ div.KJEReportTableDivLeft::after, div.KJEReportTableDivRight::after {
     display: table-cell;
 }
 
+div.KJECalcTableSidebySide {
+    width: 100%;
+    clear: both;
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+}
+
+/* 2022 NEW allow calculator to have inputs on left, graphs on right */
+
+div.KJECalcTableSidebySide::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.KJECalcTableDivLeft, div.KJECalcTableDivRight {
+    display: inline-block;
+    float: right;
+    margin:0;
+    width: 50%; /* three containers (use 25% for four, and 50% for two, etc) */
+    -webkit-flex: 1; /* Safari */
+    -ms-flex: 1; /* IE 10 */
+    flex: 1; /* Standard syntax */
+}
+
+div.KJECalcTableDivLeft {
+    float: left;
+    margin-right: 3px;
+}
+
+div.KJECalcTableDivLeft::after, div.KJECalcTableDivRight::after {
+    content: "";
+    clear: both;
+    display: table-cell;
+}
+
+/* For narrow displays stack inputs and graph */
+div.KJECalcTableDivStack {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: 0px;
+}
+div.KJECalcTableStack {
+    width: 100%;
+    clear: both;
+    display: block;
+}
+div.KJECalcTableStack::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* end inputs on left, graphs on right */
+
 th.KJEColumnHeader {
     text-align: center;
 }
@@ -1601,7 +1662,7 @@ div.KJELogo {
 }
 
 .KJEWidthConstraint {
-    max-width: 1200px;
+    max-width: 1800px;
     text-align:left;
     margin-left: auto;
     margin-right: auto;
@@ -1798,6 +1859,12 @@ div.KJELogo {
 @media print {
     .KJENoPrint {
         display: none;
+    }
+
+    div.KJECalcTableDivLeft, div.KJECalcTableDivRight {
+        display: block;
+        float: none;
+        width: 100%; /* three containers (use 25% for four, and 50% for two, etc) */
     }
 
     button.KJECommandButton, button.KJEMoreButton {
@@ -2735,6 +2802,14 @@ input[type="range"]::-moz-range-progress {
     }
 }
 
+.KJEDivCenter {
+    text-align:center;
+    width:100%;
+}
+.KJEDivCenter:first-child {
+    margin:auto;
+    text-align:left;
+}
 /*Proofing CSS*/
 h1.KJEFontTitle, #KJETitle, #KJEAllContent h1, #KJEAllContent h2.KJEDefinitionsHeader, #KJEAllContent h2.KJEReportHeader, #KJEAllContent h2.KJEScheduleHeader,
 #KJEAllContent h2.KJEToggleTitle ,  #KJEAllContent h2.KJEGraphTitle, div.KJESideBar h4  {
