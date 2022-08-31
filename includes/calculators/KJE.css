@@ -1,3 +1,4 @@
+/* 07/05/2022 Copyright 2022 KJE Computer Solutions, Inc.  Licensed for use on www.flagcu.com */ 
 
 @-webkit-keyframes fadeIn {
     from { opacity: 0; }
@@ -14,6 +15,12 @@ body {
 
 body.KJEBody {
     margin: 0;
+    color: #222222;
+    background-color: #FFFFFF;/*PAGE_BACKGROUND_COLOR*/;
+}
+
+body.KJEBody a, body.KJEBody a:hover, body.KJEBody a:visited, body.KJEBody a:active {
+    color: #0000D4;
 }
 
 #KJEAllContent {
@@ -106,13 +113,13 @@ div.KJEDropper, div.KJEGraphDropper
 }
 
 #KJETitleH1, h1.KJEFontTitle {
-    font-weight:bold;
     line-height:normal;/*line_height_large*/
-    font-size:1.4rem;/*font_large*/
+    font-size:1.5rem;/*font_large*/
 }
 
 .KJETitleExtra {
 }
+
 /*
 @media screen and (min-width:900px) {
     #KJEReport, #KJECalculatorScreenSize {
@@ -121,7 +128,7 @@ div.KJEDropper, div.KJEGraphDropper
 }
 */
 #KJECalculatorScreenSize, #KJEFixed, #KJECommandButtons, #KJEReportButtons, #KJEMoreButtons {
-    max-width: 900px;
+    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -151,7 +158,7 @@ div.KJEDropper, div.KJEGraphDropper
 }
 
 #KJEFixed {
-    width: 100%;
+    width: 98%;
     z-index:999;
 }
 
@@ -255,8 +262,7 @@ div.KJEButtonIsFixed {
     margin: 4px 2px 7px 2px;
 }
 
-.KJECommandButton, .KJEMoreButton {
-    font-weight: bold;
+.KJECommandButton, .KJEMoreButton, #KJEAllContent input.KJEMenuButton[type=button] {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-appearance: none;
     padding: 5px 3px;
@@ -265,18 +271,26 @@ div.KJEButtonIsFixed {
     -moz-border-radius: 4px;
     border-radius: 4px;
     white-space: nowrap;
-    width: 180px;
     border-width: 2px;
     border-style: solid;
     transition: background .3s ease-in-out;
-    font-size: 1.2rem;/*font_button*/
+}
+
+.KJECommandButton, .KJEMoreButton{
+    font-weight: bold;
+    width: 180px;
+    font-size: 1.2rem; /*font_button*/
+}
+
+#KJEAllContent input.KJEMenuButton[type=button] {
+    font-size: 0.9rem;/*font_normal*/
 }
 
 button.KJEMoreButton {
     display: inline-block;
 }
 
-.KJECommandButton:active, .KJEMoreButton:active {
+.KJECommandButton:active, .KJEMoreButton:active, #KJEAllContent input.KJEMenuButton[type=button]:active {
     position: relative;
     top:2px;
 }
@@ -413,13 +427,13 @@ button.KJEMenu:hover {
 }
 
 .KJEDefinitionsHeader {
-    font-size: 1.2em;
+    font-size: 1.2rem;/*font_button*/
     font-weight: bold;
-    line-height:1.4em;
+    line-height:1.5rem;/*font_large*/
 }
 
 .KJEDefinitionPopup p {
-    font-size: 1.0em;
+    font-size: 1.0rem;/*font_normal*/
     line-height: normal;
 }
 
@@ -428,7 +442,7 @@ button.KJEMenu:hover {
 }
 
 .KJEDefinitionPopup, .KJEDefinitionPopup dl, .KJEDefinitionPopup dd, .KJEDefinitionPopup dt, .KJEDefinitionPopup h3, .KJEDefinitionPopup th, .KJEDefinitionPopup td, .KJEDefinitionPopup ul, .KJEDefinitionPopup li, .KJEDefinitionPopup ol {
-    font-size: 1.0em;
+    font-size: 1.0rem;/*font_normal*/;
     line-height: normal;
 }
 
@@ -464,6 +478,7 @@ button.KJEDefinitionIcon {
     border-style: solid;
     font-size: 0.9rem;/*font_small*/
     vertical-align: top;
+    display: inline-block;
 }
 /*.KJEInputContainer button.KJEDefinitionIcon {
     float: right;
@@ -492,7 +507,6 @@ button.KJECloseButton {
     padding: 0;
     border-radius: 2px;
     border-width: 1px;
-    cursor:hand;
     font-size: 0.9rem;/*font_small*/
 
 }
@@ -509,7 +523,7 @@ button.KJECloseButton {
 #KJEDefinitionsDL dt.KJEDefinition, dt.KJEDefinition, h3.KJEDefinition {
     text-align: left;
     font-weight: bold;
-    font-size: 1.0em;
+    font-size: 1.0rem;/*font_normal*/
     padding:0;
     margin: 0;
     line-height: normal;
@@ -532,7 +546,7 @@ button.KJECloseButton {
 
 #KJEDefinitionsDL td, #KJEDefinitionsDL th, #KJEDefinitionsDL ul, #KJEDefinitionsDL li, #KJEDefinitionsDL ol,
 #KJEReport th, #KJEReport td, #KJEReport ul, #KJEReport li, #KJEReport ol {
-    font-size: 1.0em;
+    font-size: 1.0rem;/*font_normal*/
     font-weight: normal;
 }
 
@@ -600,7 +614,7 @@ div.KJEInputContainer div.KJEIncrementer
 
 div.KJESlider div.KJEScale {
     border:none;
-    left-margin: 10px;
+    margin-left: 0px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -608,6 +622,10 @@ div.KJESlider div.KJEScale {
     -ms-user-select: none;
     user-select: none;
     font-size: 0.8rem;/*font_tiny*/
+}
+
+div.KJESlider {
+    margin-left: 10px;
 }
 
 div.KJEInputContainer div.KJELabel {
@@ -709,7 +727,7 @@ div.KJEDropBoxDivModern {
     background: transparent;
 }
 
-.KJEInputContainer input[type="text"].KJEInputModern, .KJEInputContainer select.KJEDropBoxModern, .KJEInputContainer input.KJEInputModern:not([type='checkbox']):not([type='radio']) {
+.KJEInputContainer input[type="text"].KJEInputModern, input.KJEMenuInputItem[type="text"], .KJEInputContainer select.KJEDropBoxModern, .KJEInputContainer input.KJEInputModern:not([type='checkbox']):not([type='radio']) {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -720,7 +738,11 @@ div.KJEDropBoxDivModern {
     font-size: 1em;
 }
 
-.KJEInputContainer input.KJEInputModern:focus, .KJEInputContainer select.KJEDropBox:focus {
+input.KJEMenuInputItem[type="text"] {
+    font-size: 0.9rem;/*font_small*/
+}
+
+.KJEInputContainer input.KJEInputModern:focus, .KJEInputContainer select.KJEDropBox:focus, input.KJEMenuInputItem:focus {
     outline: 2px dashed #444444/*KJECommandButton*/;
     outline-offset: -3px;
 }
@@ -820,6 +842,14 @@ hr.KJEFooterLine {
 
 .KJECenterText {
     text-align:center;
+}
+
+body.KJEReportBody > div.KJEReportTitleBlock, body.KJEReportBody > div.KJECenter {
+    display: block !important;
+}
+
+div.KJECenterText {
+    display:block !important;
 }
 
 .KJEBold {
@@ -970,7 +1000,6 @@ div.KJEGuiDefnPopup {
     -moz-box-shadow: 3px 3px 3px #333;
     -webkit-animation: fadeIn .4s;
     animation: fadeIn .4s;
-    ddd
 }
 
 div.KJEGuiDefnPopup dt {
@@ -1230,9 +1259,9 @@ div.KJEReportTableDiv {
 }
 
 .KJEReportHeader {
-    font-size:1.2em;
+    font-size:1.2rem;/*font_button*/
     font-weight:bold;
-    line-height:1.4em;
+    line-height:1.5rem;/*font_large*/
 }
 
 .KJEReportTitleBlock {
@@ -1486,6 +1515,62 @@ div.KJEReportTableDivLeft::after, div.KJEReportTableDivRight::after {
     display: table-cell;
 }
 
+div.KJECalcTableSidebySide {
+    width: 100%;
+    clear: both;
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+}
+
+/* 2022 NEW allow calculator to have inputs on left, graphs on right */
+
+div.KJECalcTableSidebySide::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.KJECalcTableDivLeft, div.KJECalcTableDivRight {
+    display: inline-block;
+    float: right;
+    margin:0;
+    width: 50%; /* three containers (use 25% for four, and 50% for two, etc) */
+    -webkit-flex: 1; /* Safari */
+    -ms-flex: 1; /* IE 10 */
+    flex: 1; /* Standard syntax */
+}
+
+div.KJECalcTableDivLeft {
+    float: left;
+    margin-right: 3px;
+}
+
+div.KJECalcTableDivLeft::after, div.KJECalcTableDivRight::after {
+    content: "";
+    clear: both;
+    display: table-cell;
+}
+
+/* For narrow displays stack inputs and graph */
+div.KJECalcTableDivStack {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: 0px;
+}
+div.KJECalcTableStack {
+    width: 100%;
+    clear: both;
+    display: block;
+}
+div.KJECalcTableStack::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* end inputs on left, graphs on right */
+
 th.KJEColumnHeader {
     text-align: center;
 }
@@ -1496,9 +1581,9 @@ Rows and Cells used in the schedule table
 */
 
 .KJEScheduleHeader {
-    font-size:1.2em;
+    font-size:1.2rem;/*font_button*/
     font-weight:bold;
-    line-height:1.4em;
+    line-height:1.5rem;/*font_large*/
     page-break-after:avoid;
 }
 
@@ -1566,7 +1651,7 @@ table.KJEScheduleTable td.KJEScheduleCellStrong {
 
 table.KJEScheduleTable td.KJECellBorder, table.KJEScheduleTable th.KJECellBorder {
     border-width: 0;
-    border-sytle: solid;
+    border-style: solid;
     border-width: 0 1px 0 0;
 }
 
@@ -1602,7 +1687,7 @@ div.KJELogo {
 }
 
 .KJEWidthConstraint {
-    max-width: 1200px;
+    max-width: 1800px;
     text-align:left;
     margin-left: auto;
     margin-right: auto;
@@ -1798,7 +1883,13 @@ div.KJELogo {
 
 @media print {
     .KJENoPrint {
-        display: none;
+        display: none !important;
+    }
+
+    div.KJECalcTableDivLeft, div.KJECalcTableDivRight {
+        display: block;
+        float: none;
+        width: 100%; /* three containers (use 25% for four, and 50% for two, etc) */
     }
 
     button.KJECommandButton, button.KJEMoreButton {
@@ -1955,6 +2046,10 @@ div.KJELogo {
         border-right: 1px solid black;
     }
 
+    @media print {
+        .KJEPageBreak { page-break-before: always; } /* page-break-after works, as well */
+    }
+
 }
 
 span.KJEAccessible {
@@ -2108,16 +2203,7 @@ input.KJEMenuInputItem {
     width: 95%;
 }
 
-input.KJEMenuButton[type=button]:active {
-    top: 2px;
-    left: 1px;
-}
-input.KJEMenuButton[type=button] {
-    border-style:solid;
-    border-radius: 6px;
-}
-
-input.KJEMenuButtonWide[type=button] {
+#KJEAllContent input.KJEMenuButtonWide[type=button] {
     width:100%;
 }
 
@@ -2264,7 +2350,7 @@ img.KJEMiddle {
 /**Color Settings**/
 /* Color Settings */
 #KJEAllContent,.KJECalculator p, .KJEFontHeading {
-    color: #222;
+    color: #222222;
 }
 
 body.KJEBody #KJEAllContent,.KJEWidthConstraint, .KJEWrapper {
@@ -2298,7 +2384,7 @@ div.KJEError {
 div.KJEGuiDefnPopup,
 span.KJEGuiErrorPopup,
 span.KJERequired:hover span.KJERequiredShowHover {
-    color:#222;
+    color:#222222;
     background-color:#FFFFFF;
     border-color: #0000D4;
 }
@@ -2337,20 +2423,19 @@ button.KJECloseButton:hover {
 }
 
 /* Controls */
-.KJECommandButton, .KJEMoreButton {
+.KJECommandButton, .KJEMoreButton, #KJEAllContent input.KJEMenuButton[type=button]  {
     color: #FFFFFF/*KJECommandButton*/;
     background-color: #333333/*KJECommandButton*/;
     border-color: #444444/*KJECommandButton*/;
 }
 
-.KJECommandButton:focus, .KJEMoreButton:focus   {
+.KJECommandButton:focus, .KJEMoreButton:focus, #KJEAllContent input.KJEMenuButton[type=button]:focus   {
     background-color: #333333/*KJECommandButton*/;
-
-    outline: none;
-    box-shadow: 0 0 2pt 2pt #444444/*KJECommandButton*/;
+    box-shadow:0 0 5px 0px #333333/*KJECommandButton*/ inset;
+    outline: 2px dashed #444444/*KJECommandButton*/;
 }
 
-.KJECommandButton:hover, .KJEMoreButton:hover, .KJECommandButton:active, .KJEMoreButton:active   {
+.KJECommandButton:hover, .KJEMoreButton:hover, .KJECommandButton:active, .KJEMoreButton:active, #KJEAllContent input.KJEMenuButton[type=button]:hover, #KJEAllContent input.KJEMenuButton[type=button]:active   {
     background-color: #444444/*KJECommandButton*/;
     border-color: #333333/*KJECommandButton*/;
 }
@@ -2440,8 +2525,9 @@ button.KJEMenu:hover,
 button.KJEMenu:active,
 button.KJEMenu:focus,
 button.KJEMenu:hover {
-    border-color:#0080FF;
-    outline: lightgray solid 2px;
+    outline-offset: -3px;
+    border-color: transparent;
+    outline: #444444/*KJECommandButton*/ dashed 2px;
 }
 
 div.KJEMenuHeader {
@@ -2495,7 +2581,7 @@ table.KJEReportTable  thead.KJEReportTHeader tr.KJEHeaderRow,
 table.KJEScheduleTable  thead.KJEScheduleTHeader tr.KJEScheduleHeaderRow,
 table.KJEReportTable caption.KJEHeaderRow, table.KJEScheduleTable caption.KJEHeaderRow {
     background-color: #CCCCCC/*PAGE_BACKGROUND_COLORDARKERDARKER*/;
-    color: #222;
+    color: #222222;
 }
 
 table.KJEReportTable td.KJECell, table.KJEReportTable th.KJECell,
@@ -2736,4 +2822,12 @@ input[type="range"]::-moz-range-progress {
     }
 }
 
+.KJEDivCenter {
+    text-align:center;
+    width:100%;
+}
+.KJEDivCenter:first-child {
+    margin:auto;
+    text-align:left;
+}
 /*Proofing CSS*/
