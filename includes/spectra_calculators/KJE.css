@@ -1,4 +1,4 @@
-/* 10/02/2022 Copyright 2022 KJE Computer Solutions, Inc.  Licensed for use on https://www.spectracu.com */ 
+/* 01/02/2023 Copyright 2023 KJE Computer Solutions, Inc.  Licensed for use on https://www.spectracu.com */ 
 
 @-webkit-keyframes fadeIn {
     from { opacity: 0; }
@@ -1645,10 +1645,22 @@ table.KJEScheduleTable th.KJEScheduleHeading {
     border: none;
 }
 
-.KJEMinHeight2 {
-    height:30px;
-    padding: 10px;
+table.KJEScheduleTable th.KJEScheduleHeadingBorder {
+    border-width: 0;
+    border-style: solid;
+    border-width: 0 1px 0 1px;
 }
+table.KJEScheduleTable th.KJEScheduleHeadingLeftBorder {
+    border-width: 0;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+}
+table.KJEScheduleTable th.KJEScheduleHeadingRightBorder {
+    border-width: 0;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+}
+
 
 table.KJEScheduleTable td.KJEScheduleCell,
 table.KJEScheduleTable th.KJEScheduleCell,
@@ -1901,7 +1913,7 @@ div.KJELogo {
 }
 
 @media print {
-    .KJENoPrint {
+    .KJENoPrint, #KJEBubbleHolder, .nav_box {
         display: none !important;
     }
 
@@ -2620,7 +2632,11 @@ table.KJEScheduleTable td.KJEScheduleCell, table.KJEScheduleTable td.KJESchedule
 table.KJEScheduleTable th.KJEScheduleHeading, table.KJEScheduleTable th.KJEScheduleCell, table.KJEScheduleTable th.KJEScheduleCellStrong,
 table.KJEReportTable td.KJECellBorder, table.KJEReportTable th.KJECellBorder,
 table.KJECalcTable th.KJECellBorder, table.KJECalcTable td.KJECellBorder,
-table.KJEScheduleTable td.KJECellBorder, table.KJEScheduleTable th.KJECellBorder {
+table.KJEScheduleTable td.KJECellBorder, table.KJEScheduleTable th.KJECellBorder,
+table.KJEScheduleTable th.KJEScheduleHeadingBorder,
+table.KJEScheduleTable th.KJEScheduleHeadingLeftBorder,
+table.KJEScheduleTable th.KJEScheduleHeadingRightBorder
+{
     border-color: #565656;
 }
 

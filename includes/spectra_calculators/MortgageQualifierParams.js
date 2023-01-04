@@ -29,7 +29,7 @@ KJE.parameters.set("TERM",30);
 
 /**V3_CUSTOM_CODE**/
 /* <!--
-  Financial Calculators, &copy;1998-2021 KJE Computer Solutions, Inc.
+  Financial Calculators, &copy;1998-2022 KJE Computer Solutions, Inc.
   For more information please see:
   <A HREF="https://www.dinkytown.net">https://www.dinkytown.net</A>
  -->
